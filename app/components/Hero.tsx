@@ -13,17 +13,17 @@ export default function Hero() {
                     <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/20 to-black/45" />
                 </div>
             </div>
-            <div className="flex flex-col z-10 h-full pl-[15%] items-center justify-center">
+            <div className="flex flex-col z-10 h-full px-5 md:px-[15%] items-center justify-center">
                 <div className="text-left w-full mb-8">
                     <div className="flex flex-col gap-0">
-                        <h1 className="text-2xl md:text-5xl text-white font-extrabold mb-3">Kvalitetsgravsteiner</h1>
-                        <h1 className="text-2xl md:text-5xl text-white font-extrabold mb-3">med omtanke</h1>
+                        <h1 className="text-4xl md:text-5xl text-white font-extrabold mb-3">Kvalitetsgravsteiner</h1>
+                        <h1 className="text-4xl md:text-5xl text-white font-extrabold mb-3">med omtanke</h1>
                     </div>
                     <div className="flex flex-col gap-0">
                         <p className="text-md md:text-xl text-white">Vi skaper varige minnesmerker med håndverkstradisjon og respekt</p>
                         <p className="text-md md:text-xl text-white">for hver enkelt historie.</p>
                     </div>
-                    <div className="flex gap-5 mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
                         <button className="bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Se våre produkter</button>
                         <button className="bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Kontakt oss</button>
                     </div>

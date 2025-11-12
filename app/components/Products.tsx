@@ -1,13 +1,13 @@
 export default function Products() {
     return(
-        <div className="px-[15%] flex flex-col gap-15">
+        <div className="px-5 md:px-[15%] flex flex-col gap-15">
             <div className="flex justify-center">
                 <div className="w-150 text-center">
                     <h1 className="text-4xl text-[#444] mb-2">Våre produkter</h1>
                     <p>Vi tilbyr et bredt utvalg av gravsteiner i forskjellige materialer og stiler</p>
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div className="">
                     <div className="overflow-hidden">
                         <img src="/placeholder-1.jpg" className="rounded-[2] hover:scale-102 transition duration-500" />
