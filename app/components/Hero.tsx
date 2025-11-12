@@ -1,11 +1,17 @@
+'use client';
+import Link from "next/link";
+
 export default function Hero() {
+    const scrollToVendor = () => {
+        document.getElementById('vendors')?.scrollIntoView({ behavior: 'smooth' });
+    }
     return(
         <div className="relative h-[600px] flex items-center jusitfy-center overflow-hidden">
             <div className="absolute inset-0 z-0"
                 style={{
-                    backgroundImage: 'url(/hero.jpg)',
+                    backgroundImage: 'url(https://www.gravplass.no/contentassets/3a9c064a4ed64f1199f1d9da7dbf186f/norderhov%20kirkeg%C3%A5rd%20foto%20gro%20e.%20h%C3%A5kenrud.jpg)',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'bottom',
                 }}>
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-white/40" />
@@ -24,8 +30,8 @@ export default function Hero() {
                         <p className="text-md md:text-xl text-white">for hver enkelt historie.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
-                        <button className="bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Se våre produkter</button>
-                        <button className="bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Kontakt oss</button>
+                        <button onClick={scrollToVendor} className="bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Se våre leverandører</button>
+                        <Link href="../contact/" className="text-center bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Kontakt oss</Link>
                     </div>
                 </div>
             </div>
