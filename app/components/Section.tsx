@@ -24,7 +24,7 @@ export default function Section() {
                         </div>
                     </div>
                     <h1 className="text-2xl text-[#444]">Kvalitet</h1>
-                    <p>Vi forstår hvor viktig denne prosessen er, og behandler hvert oppdrag med respekt og empati.</p>
+                    <p>Våre gravsteiner produseres i Norge med fokus på kvalitet, håndverk og varige materialer.</p>
                 </div>
                 <div className="text-center">
                     <div className="flex justify-center items-center">
@@ -33,7 +33,7 @@ export default function Section() {
                         </div>
                     </div>
                     <h1 className="text-2xl text-[#444]">Håndverk</h1>
-                    <p>Vi forstår hvor viktig denne prosessen er, og behandler hvert oppdrag med respekt og empati.</p>
+                    <p>Med generasjoners erfaring skaper vi unike steiner som står seg i tid.</p>
                 </div>
             </section>
         </div>
