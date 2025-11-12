@@ -3,7 +3,7 @@ import Hero from "@/app/components/Hero";
 import Section from "@/app/components/Section";
 import Vendors from "@/app/components/Vendors";
 import Footer from "@/app/components/Footer";
-import ContactCart from "@/app/components/ContactCard";
+import Contact from "@/app/components/Contact";
 
 export default function Home() {
   return (
@@ -12,7 +12,9 @@ export default function Home() {
       <Hero />
       <Section />
       <Vendors />
-      <ContactCart />
+      <div id="contact" className="pt-15">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
