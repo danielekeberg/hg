@@ -9,7 +9,7 @@ export default function Hero() {
         document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
     }
     return(
-        <div className="relative h-[600px] flex items-center jusitfy-center overflow-hidden" id="top">
+        <div className="relative h-screen md:h-[600px] flex items-center jusitfy-center overflow-hidden" id="top">
             <div className="absolute inset-0 z-0"
                 style={{
                     backgroundImage: 'url(https://www.kirken.no/globalassets/fellesrad/gran/bilder/kirkebygg/moen-kirke/moen%20kirke_nymalt%20sommer%202022%20med%20solsikker%20knut%20b%C3%B8e.jpg?width=1600&height=896&quality=80&contId=7251162)',
