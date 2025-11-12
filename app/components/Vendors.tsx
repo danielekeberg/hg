@@ -9,8 +9,8 @@ export default function Vendors() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
-                    <div className="overflow-hidden min-h-100 flex items-end border border-neutral-300 rounded-[2]">
-                        <img src="https://eidestein.no/img/modeller/mod-750-jpg/344-B.jpg" className="hover:scale-102 transition duration-500" />
+                    <div className="overflow-hidden bg-white min-h-100 flex items-end border border-neutral-300 rounded-[2]">
+                        <img src="https://eidestein.no/img/modeller/mod-750-jpg/375A.jpg" className="hover:scale-102 transition duration-500" />
                     </div>
                     <div className="p-2">
                         <h1 className="text-[#444] text-xl mb-2">Tradisjonell gravstein</h1>
@@ -18,8 +18,8 @@ export default function Vendors() {
                     </div>
                 </div>
                 <div>
-                    <div className="overflow-hidden min-h-100 flex items-end border border-neutral-300 rounded-[2]">
-                        <img src="https://eidestein.no/img/modeller/mod-750-jpg/354.jpg" className="hover:scale-102 transition duration-500" />
+                    <div className="overflow-hidden bg-white min-h-100 flex items-end border border-neutral-300 rounded-[2]">
+                        <img src="https://eidestein.no/img/modeller/mod-750-jpg/366-B.jpg" className="hover:scale-102 transition duration-500" />
                     </div>
                     <div className="p-2">
                         <h1 className="text-[#444] text-xl mb-2">Tradisjonell gravstein</h1>
@@ -27,8 +27,8 @@ export default function Vendors() {
                     </div>
                 </div>
                 <div>
-                    <div className="overflow-hidden min-h-100 flex items-end border border-neutral-300 rounded-[2]">
-                        <img src="https://eidestein.no/img/modeller/mod-750-jpg/357.jpg" className="hover:scale-102 transition duration-500" />
+                    <div className="overflow-hidden bg-white min-h-100 flex items-end border border-neutral-300 rounded-[2]">
+                        <img src="https://www.nergaard.no/uploads/_CGSmartImage/img-9e38aa4cd3c92622cc5ebb0e7bd6741f" className="hover:scale-102 transition duration-500" />
                     </div>
                     <div className="p-2">
                         <h1 className="text-[#444] text-xl mb-2">Tradisjonell gravstein</h1>
@@ -36,8 +36,8 @@ export default function Vendors() {
                     </div>
                 </div>
                 <div>
-                    <div className="overflow-hidden min-h-100 flex items-end border border-neutral-300 rounded-[2]">
-                        <img src="https://eidestein.no/img/modeller/mod-750-jpg/350A.jpg" className="hover:scale-102 transition duration-500" />
+                    <div className="overflow-hidden bg-white min-h-100 flex items-end border border-neutral-300 rounded-[2]">
+                        <img src="https://www.nergaard.no/uploads/_CGSmartImage/img-dce4bfc538208d4662d8957595df1536" className="hover:scale-102 transition duration-500" />
                     </div>
                     <div className="p-2">
                         <h1 className="text-[#444] text-xl mb-2">Tradisjonell gravstein</h1>
