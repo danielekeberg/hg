@@ -42,9 +42,9 @@ export default function Header() {
                 <div className="relative">
                     {hamburger && (
                         <div ref={menuRef} className="absolute flex flex-col justify-center text-center z-9999 top-0 right-0 bg-white border border-neutral-400 w-50">
-                            <Link href="../" className="hover:text-[#444] cursor-pointer p-2 border-b border-neutral-400 w-full">Hjem</Link>
-                            <Link href="../produkter/" className="hover:text-[#444] cursor-pointer p-2 border-b border-neutral-400 w-full">Produkter</Link>
-                            <Link href="../kontakt/" className="hover:text-[#444] cursor-pointer p-2 w-full">Kontakt</Link>
+                            <Link onClick={handleHamburger} href="../" className="hover:text-[#444] cursor-pointer p-2 border-b border-neutral-400 w-full">Hjem</Link>
+                            <Link onClick={handleHamburger} href="../produkter/" className="hover:text-[#444] cursor-pointer p-2 border-b border-neutral-400 w-full">Produkter</Link>
+                            <Link onClick={handleHamburger} href="../kontakt/" className="hover:text-[#444] cursor-pointer p-2 w-full">Kontakt</Link>
                         </div>
                     )}
                 </div>
