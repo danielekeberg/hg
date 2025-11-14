@@ -33,8 +33,8 @@ export default function Hero() {
                         <p className="text-md md:text-xl text-white">for hver enkelt historie.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
-                        <button onClick={scrollToVendor} className="bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Se våre leverandører</button>
-                        <button onClick={scrollToContact} className="text-center bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Kontakt oss</button>
+                        <Link href="../produkter/" className="text-center bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Se våre produkter</Link>
+                        <Link href="../kontakt/" className="text-center bg-[#ededed] py-2 px-5 rounded-[2] border border-neutral-200 cursor-pointer hover:bg-neutral-300 text-[#444]">Kontakt oss</Link>
                     </div>
                 </div>
             </div>
