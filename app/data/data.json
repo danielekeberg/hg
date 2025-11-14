@@ -1,0 +1,126 @@
+[
+    {
+        "data": {
+            "375a": {
+                "name": "Modell 375a",
+                "price": 40500,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/375A.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "366b": {
+                "name": "Modell 366b",
+                "price": 29700,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/366-B.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "344a": {
+                "name": "Modell 344a",
+                "price": 46900,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/344A.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "350b": {
+                "name": "Modell 350b",
+                "price": 31500,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/350B.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "353b": {
+                "name": "Modell 353b",
+                "price": 34400,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/353B.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "357": {
+                "name": "Modell 357",
+                "price": 31500,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/357.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "368b": {
+                "name": "Modell 368b",
+                "price": 42000,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/368B.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "369": {
+                "name": "Modell 369",
+                "price": 35900,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/369.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "373b": {
+                "name": "Modell 373b",
+                "price": 33000,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/373-B.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "385b": {
+                "name": "Modell 385b",
+                "price": 28700,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/385B.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "457": {
+                "name": "Modell 457",
+                "price": 39500,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-c47580eab5566b8c4126270fa89b916f",
+                "vendor": "Nergaard.no"
+            },
+            "439": {
+                "name": "Modell 439",
+                "price": 29900,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-a343166735c4ee5df390b3431408a893",
+                "vendor": "Nergaard.no"
+            },
+            "433": {
+                "name": "Modell 433",
+                "price": 18900,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-9bd6452e1951675ff3dbdbf113117617",
+                "vendor": "Nergaard.no"
+            },
+            "432": {
+                "name": "Modell 432",
+                "price": 32700,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-9f45b4e69824d57b3eb922fe784308ad",
+                "vendor": "Nergaard.no"
+            },
+            "430": {
+                "name": "Modell 430",
+                "price": 34500,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-9e38aa4cd3c92622cc5ebb0e7bd6741f",
+                "vendor": "Nergaard.no"
+            },
+            "426": {
+                "name": "Modell 426",
+                "price": 29000,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-618852d059999698211ebc43117cb7da",
+                "vendor": "Nergaard.no"
+            },
+            "424": {
+                "name": "Modell 424",
+                "price": 27400,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-6a8430deee61b89efe6cf194e44f2e7e",
+                "vendor": "Nergaard.no"
+            },
+            "454": {
+                "name": "Modell 454",
+                "price": 25000,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-dce4bfc538208d4662d8957595df1536",
+                "vendor": "Nergaard.no"
+            },
+            "443": {
+                "name": "Modell 443",
+                "price": 32600,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-9d5acfc036d4d0b60a034acad2d7d748",
+                "vendor": "Nergaard.no"
+            },
+            "442": {
+                "name": "Modell 442",
+                "price": 23000,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-a2714c8a231ed94361b664af4a0cf4db",
+                "vendor": "Nergaard.no"
+            }
+        }
+    }
+]
