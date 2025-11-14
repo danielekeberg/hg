@@ -2,7 +2,7 @@ export default function Footer() {
     const now = new Date();
     const year = now.getFullYear();
     return(
-        <div className="px-5 md:px-[15%] pt-15 pb-5">
+        <div className="px-5 md:px-[15%] bg-[#e7e1da] pt-15 pb-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div className="flex flex-col gap-2">
                     <h3 className="text-[#444] text-xl">Hadeland Gravstein</h3>
