@@ -1,9 +1,9 @@
 export default function Contact() {
     return(
-        <div className="bg-[#e7e1da]">
-            <div className="flex justify-center pt-15">
+        <div className="pt-10 md:pt-15">
+            <div className="bg-[#e7e1da] flex justify-center py-15">
                 <div className="text-center">
-                    <h1 className="text-4xl text-[#444]">Kontakt oss</h1>
+                    <h1 className="text-4xl text-[#444] mb-5">Kontakt oss</h1>
                     <p>Vi er her for å hjelpe deg. Ta kontakt for en uforpliktende samtale.</p>
                 </div>
             </div>
