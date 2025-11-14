@@ -82,7 +82,7 @@ export default function Vendors() {
                 <div className="flex justify-center">
                     <div className="p-2 grid grid-cols-1 gap-5 md:gap-50 md:grid-cols-2">
                         <div className="flex justify-center border border-neutral-300/50">
-                            <img src="/eidestein-logo.jpg" className="h-20" />
+                            <img src="https://eidestein.no/img/Eide-Stein-Logo-meny.jpg" className="h-20" />
                         </div>
                         <div className="flex justify-center border border-neutral-300/50">
                             <img src="https://www.begravelsesbyraer.no/wp-content/uploads/2024/12/nergard-600x198.png" className="h-20" />
