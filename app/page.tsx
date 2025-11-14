@@ -4,6 +4,7 @@ import Section from "@/app/components/Section";
 import Vendors from "@/app/components/Vendors";
 import Footer from "@/app/components/Footer";
 import Contact from "@/app/components/Contact";
+import ContactCard from "@/app/components/ContactCard";
 
 export default function Home() {
   return (
@@ -12,9 +13,7 @@ export default function Home() {
       <Hero />
       <Section />
       <Vendors />
-      <div id="contact" className="pt-15">
-        <Contact />
-      </div>
+      <ContactCard />
       <Footer />
     </div>
   );
