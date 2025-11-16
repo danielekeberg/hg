@@ -7,7 +7,7 @@ export default function Vendors() {
                 <div className="flex justify-center">
                     <div className="w-140 text-center">
                         <h1 className="text-4xl text-[#444] mb-2">Våre produkter</h1>
-                        <p>Vi tilbyr et bredt utvalg av gravsteiner i forskjellige materialer og stiler</p>
+                        <p>Vi tilbyr et bredt utvalg av gravsteiner i forskjellige materialer og stiler.</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center">
@@ -73,11 +73,15 @@ export default function Vendors() {
                         <Link href="../produkter/" className="bg-stone-500 text-white py-2 px-5 rounded-[2] cursor-pointer hover:bg-stone-500/80">Se alle produkter</Link>
                     </div>
                 </div>
+                <div className="text-center">
+                    <p>Hadeland Gravstein utfører alle typer arbeider på eksisterende gravminner - fra tilleggsinskripsjoner og oppretting til rengjøring, oppussing og vedlikehold.</p>
+                    <p>Vi legger stor vekt på nøyaktighet og respekt for det opprinnelige uttrykket, slik at steinen bevares i sin fulle verdighet gjennom tidens løp.</p>
+                </div>
             </div>
             <div className="bg-[#e7e1da] py-15 mt-15 md:mt-0">
                 <div className="text-center mb-10">
                     <h1 className="text-4xl text-[#444] mb-2">Våre leverandører</h1>
-                    <p>Vi samarbeider med kvalitetsleverandører av gravsteiner i forskjellige materialer og stiler</p>
+                    <p>Vi samarbeider med kvalitetsleverandører av gravsteiner i forskjellige materialer og stiler.</p>
                 </div>
                 <div className="flex justify-center">
                     <div className="p-2 grid grid-cols-1 gap-5 md:gap-50 md:grid-cols-2">
