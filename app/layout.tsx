@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hadeland Gravstein",
-  description: "Hadeland Gravstein",
+  description: "Hadeland Gravstein tilbyr gravsteiner av høy kvalitet i alle prisklasser, tilpasning etter ønske og profesjonell veiledning for et verdig minnesmerke.",
 };
 
 export default function RootLayout({
