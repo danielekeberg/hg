@@ -4,6 +4,7 @@ import data from "@/app/data/data.json";
 
 type Products = {
     name: string,
+    id: number;
     price: number,
     img: string
     vendor: string;
@@ -35,7 +36,7 @@ export default function Products() {
     const sorted = [...products].sort((a, b) => {
         switch (sortBy) {
             case 'standard':
-                return a.name.localeCompare(b.name);
+                return a.id - b.id;
             case 'price-asc':
                 return a.price - b.price;
             case 'price-desc':
