@@ -20,7 +20,7 @@ export default function Vendors() {
                         <div className="p-2 border border-neutral-300/50 bg-[#e7e1da]">
                             <h3 className="text-[#444] text-xl">Modell 375a</h3>
                             <div className="flex justify-between items-center mt-3">
-                                <p className="font-bold">fra 40500 kr</p>
+                                <p className="font-bold">fra 40 500 kr</p>
                                 <p>Eidestein.no</p>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ export default function Vendors() {
                         <div className="p-2 border border-neutral-300/50 bg-[#e7e1da]">
                             <h3 className="text-[#444] text-xl">Modell 366b</h3>
                             <div className="flex justify-between items-center mt-3">
-                                <p className="font-bold">fra 29700 kr</p>
+                                <p className="font-bold">fra 29 700 kr</p>
                                 <p>Eidestein.no</p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export default function Vendors() {
                         <div className="p-2 border border-neutral-300/50 bg-[#e7e1da]">
                             <h3 className="text-[#444] text-xl">Modell 430</h3>
                             <div className="flex justify-between items-center mt-3">
-                                <p className="font-bold">fra 34500 kr</p>
+                                <p className="font-bold">fra 34 500 kr</p>
                                 <p>Nergaard.no</p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ export default function Vendors() {
                         <div className="p-2 border border-neutral-300/50 bg-[#e7e1da]">
                             <h3 className="text-[#444] text-xl">Modell 454</h3>
                             <div className="flex justify-between items-center mt-3">
-                                <p className="font-bold">fra 25000 kr</p>
+                                <p className="font-bold">fra 25 000 kr</p>
                                 <p>Nergaard.no</p>
                             </div>
                         </div>
