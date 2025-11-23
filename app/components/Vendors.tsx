@@ -10,7 +10,7 @@ export default function Vendors() {
                         <p>Vi tilbyr et bredt utvalg av gravsteiner i forskjellige materialer og stiler.</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
                     <div className="rounded-[2]">
                         <div className="md:h-100 flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
                             <div className="flex justify-center items-center">

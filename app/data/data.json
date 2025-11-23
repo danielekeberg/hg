@@ -420,6 +420,34 @@
                 "price": 31800,
                 "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-89ff9bb9801f8f0a4174cb011f8023cf",
                 "vendor": "Nergaard.no"
+            },
+            "123": {
+                "name": "Modell 123",
+                "id": 61,
+                "price": 34000,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-42bfc48872099f1d167c38ece08e07d1",
+                "vendor": "Nergaard.no"
+            },
+            "117": {
+                "name": "Modell 117",
+                "id": 62,
+                "price": 33700,
+                "img": "https://www.nergaard.no/uploads/_CGSmartImage/img-b32a89e5127a7accbb5bcdb75727d4e7",
+                "vendor": "Nergaard.no"
+            },
+            "420": {
+                "name": "Modell 420",
+                "id": 63,
+                "price": 24800,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/420.jpg",
+                "vendor": "Eidestein.no"
+            },
+            "419": {
+                "name": "Modell 419",
+                "id": 64,
+                "price": 26400,
+                "img": "https://eidestein.no/img/modeller/mod-750-jpg/419.jpg",
+                "vendor": "Eidestein.no"
             }
         }
     }

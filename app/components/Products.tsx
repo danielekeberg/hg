@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import data from "@/app/data/data.json";
+import Loader from "@/app/components/Loader";
 
 type Products = {
     name: string,
@@ -8,6 +9,23 @@ type Products = {
     price: number,
     img: string
     vendor: string;
+}
+
+function interleaveByTwo(a: Products[] = [], b: Products[] = []) {
+    const result: (Products & { supplier: string })[] = [];
+    let i = 0;
+    let j = 0;
+    while (i < a.length || j < b.length) {
+        for (let k = 0; k < 2 && i < a.length; k++) {
+            result.push({ ...a[i], supplier: "Eidestein.no" });
+            i++;
+        }
+        for (let k = 0; k < 2 && j < b.length; k++) {
+            result.push({ ...b[j], supplier: "Nergaard.no" });
+            j++;
+        }
+    }
+    return result;
 }
 
 export default function Products() {
@@ -23,46 +41,39 @@ export default function Products() {
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
     const [hasMore, setHasMore] = useState(true);
-    
     const [display, setDisplay] = useState(BATCH_SIZE);
-    const [isLoading, setIsLoading] = useState(false);
-
+    const [isLoading, setIsLoading] = useState(true);
     const sentinelRef = useRef(null);
 
     useEffect(() => {
-        const items = Object.values(data[0].data);
-        setProducts(items);
-
+        const items = Object.values(data[0].data) as Products[];
+        const supplierA = items.filter(p => p.vendor === "Eidestein.no");
+        const supplierB = items.filter(p => p.vendor === "Nergaard.no");
+        const mixed = interleaveByTwo(supplierA, supplierB)
+        setProducts(mixed);
+        setIsLoading(false);
+        setDisplay(BATCH_SIZE);
+        setHasMore(true);
         function handleClickOutside(e: MouseEvent) {
             if(menuRef.current && !menuRef.current.contains(e.target as Node)) {
                 setIsOpen(false);
             }
         }
-
         document.addEventListener("mousedown", handleClickOutside)
-
         return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, [])
+    }, [sortBy])
 
     const sorted = useMemo(() => {
-        return [...products].sort((a, b) => {
-            switch (sortBy) {
-                case 'standard':
-                    return a.id - b.id;
-                case 'price-asc':
-                    return a.price - b.price;
-                case 'price-desc':
-                    return b.price - a.price;
-                default:
-                    return 0;
-            }
-        })
-    }, [products, sortBy])
-
-    useEffect(() => {
-        setDisplay(BATCH_SIZE);
-        setHasMore(true);
-    }, [sortBy])
+        switch (sortBy) {
+            case 'price-asc':
+                return [...products].sort((a, b) => a.price - b.price);
+            case 'price-desc':
+                return [...products].sort((a, b) => b.price - a.price);
+            case 'standard':
+            default:
+                return products;
+        }
+    }, [sortBy, products]);
 
     const showing = sorted.slice(0, display);
 
@@ -148,12 +159,15 @@ export default function Products() {
                         )}
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+                {isLoading && (
+                    <Loader />
+                )}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
                     {showing.map((p:any, i) => (
                         <div key={i} className="rounded-[2]">
-                            <div className="md:h-100 flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
-                                <div className="flex justify-center items-center">
-                                    <img src={p.img} className="w-80 hover:scale-103 transition duration-500" />
+                            <div className="flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
+                                <div className="flex min-h-50 aspect-square justify-center items-center">
+                                    <img src={p.img} className="w-full h-full object-contain hover:scale-103 transition duration-500" />
                                 </div>
                             </div>
                             <div className="p-2 border border-neutral-300/50 bg-[#e7e1da]">
