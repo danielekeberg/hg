@@ -2,12 +2,6 @@
 import Link from "next/link";
 
 export default function Hero() {
-    const scrollToVendor = () => {
-        document.getElementById('vendors')?.scrollIntoView({ behavior: 'smooth' });
-    }
-    const scrollToContact = () => {
-        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-    }
     return(
         <div className="relative h-screen md:h-[600px] flex items-center jusitfy-center overflow-hidden" id="top">
             <div className="absolute inset-0 z-0"
