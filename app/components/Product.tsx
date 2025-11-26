@@ -68,7 +68,7 @@ export default function Product() {
                                 </thead>
                                 <tbody>
                                     {product[0]?.addons &&
-                                        product[0].addons.map((a, i) => (
+                                        product[0].addons.sort((a, b) => a.name.localeCompare(b.name)).map((a, i) => (
                                             <tr key={i} className="grid grid-cols-2">
                                                 <td className={`p-2 ${i % 2 === 0 ? 'bg-neutral-100' : 'bg-neutral-200'}`}>{a.name}</td>
                                                 <td className={`p-2 text-right ${i % 2 === 0 ? 'bg-neutral-100' : 'bg-neutral-200'}`}>{formatNumber(a.price)} kr</td>
