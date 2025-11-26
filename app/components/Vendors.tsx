@@ -11,7 +11,7 @@ export default function Vendors() {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
-                    <div className="rounded-[2]">
+                    <Link href="../produkt/v8d65s-d13syn-xv6lv7-k786mg-56s5ra-uzbf60" className="rounded-[2]">
                         <div className="md:h-100 flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
                             <div className="flex justify-center items-center">
                                 <img src="https://eidestein.no/img/modeller/mod-750-jpg/375A.jpg" className="w-80 hover:scale-103 transition duration-500" />
@@ -24,8 +24,8 @@ export default function Vendors() {
                                 <p>Eidestein.no</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="rounded-[2]">
+                    </Link>
+                    <Link href="../produkt/fo8jtw-mv0901-avkeft-vty0b0-4l74pi-clpbw5" className="rounded-[2]">
                         <div className="md:h-100 flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
                             <div className="flex justify-center items-center">
                                 <img src="https://eidestein.no/img/modeller/mod-750-jpg/366-B.jpg" className="w-80 hover:scale-103 transition duration-500" />
@@ -38,8 +38,8 @@ export default function Vendors() {
                                 <p>Eidestein.no</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="rounded-[2]">
+                    </Link>
+                    <Link href="../produkt/98kmue-h7f353-rj35gs-durqnk-gs447l-wbe2ny" className="rounded-[2]">
                         <div className="md:h-100 flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
                             <div className="flex justify-center items-center">
                                 <img src="https://www.nergaard.no/uploads/_CGSmartImage/img-9e38aa4cd3c92622cc5ebb0e7bd6741f" className="w-80 hover:scale-103 transition duration-500" />
@@ -52,8 +52,8 @@ export default function Vendors() {
                                 <p>Nergaard.no</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="rounded-[2]">
+                    </Link>
+                    <Link href="../produkt/grvl80-hlqhwi-06ycab-h9a7ui-20s8hi-dbzzfw" className="rounded-[2]">
                         <div className="md:h-100 flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
                             <div className="flex justify-center items-center">
                                 <img src="https://www.nergaard.no/uploads/_CGSmartImage/img-dce4bfc538208d4662d8957595df1536" className="w-80 hover:scale-103 transition duration-500" />
@@ -66,7 +66,7 @@ export default function Vendors() {
                                 <p>Nergaard.no</p>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="flex justify-center">
                     <div className="flex justify-center">
