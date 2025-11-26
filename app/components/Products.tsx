@@ -1,7 +1,8 @@
 'use client';
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
-import data from "@/app/data/data.json";
+import Link from "next/link";
 import Loader from "@/app/components/Loader";
+import { supabase } from "@/lib/supabaseClient";
 
 type Products = {
     name: string,
@@ -46,14 +47,31 @@ export default function Products() {
     const sentinelRef = useRef(null);
 
     useEffect(() => {
-        const items = Object.values(data[0].data) as Products[];
-        const supplierA = items.filter(p => p.vendor === "Eidestein.no");
-        const supplierB = items.filter(p => p.vendor === "Nergaard.no");
-        const mixed = interleaveByTwo(supplierA, supplierB)
-        setProducts(mixed);
-        setIsLoading(false);
-        setDisplay(BATCH_SIZE);
-        setHasMore(true);
+        const fetchStones = async () => {
+            try {
+                setIsLoading(true);
+                const { data: rows, error } = await supabase
+                    .from("gravstein")
+                    .select("*")
+                if (error) {
+                    console.error("Error fetching stones:", error);
+                    return;
+                }
+                const items = (rows ?? []) as Products[];
+                const supplierA = items.filter(p => p.vendor === "Eidestein.no");
+                const supplierB = items.filter(p => p.vendor === "Nergaard.no");
+                const mixed = interleaveByTwo(supplierA, supplierB);
+                console.log(items)
+                setProducts(mixed);
+                setDisplay(BATCH_SIZE);
+                setHasMore(true);
+            } catch (err) {
+                console.error("Unexpected error fetching stones:", err);
+            } finally {
+                setIsLoading(false);
+            }
+        }
+        fetchStones();
         function handleClickOutside(e: MouseEvent) {
             if(menuRef.current && !menuRef.current.contains(e.target as Node)) {
                 setIsOpen(false);
@@ -164,7 +182,7 @@ export default function Products() {
                 )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
                     {showing.map((p:any, i) => (
-                        <div key={i} className="rounded-[2]">
+                        <Link href={`../produkt/${p.customId}`} key={i} className="rounded-[2]">
                             <div className="flex flex-col justify-end border-neutral-300/50 bg-white overflow-hidden border">
                                 <div className="flex min-h-50 aspect-square justify-center items-center">
                                     <img src={p.img} className="w-full h-full object-contain hover:scale-103 transition duration-500" />
@@ -177,7 +195,7 @@ export default function Products() {
                                     <p>{p.vendor}</p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
                 {hasMore && <div ref={sentinelRef} className="h-px w-full" />}
