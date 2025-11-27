@@ -24,25 +24,31 @@ export default function Product() {
     const params = useParams();
     const { id } = params;
     const [product, setProduct] = useState<Product[]>([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         async function fetchStone() {
-            const { data, error } = await supabase
-                .from("gravstein")
-                .select("*")
-                .eq("customId", id)
-            if(error) {
-                console.error("Error fetching stone:", error);
-                return;
+            try {
+                setLoading(true);
+                const { data, error } = await supabase
+                    .from("gravstein")
+                    .select("*")
+                    .eq("customId", id)
+                if(error) {
+                    console.error("Error fetching stone:", error);
+                    return;
+                }
+                const stone = (data || []) as Product[];
+                console.log(stone);
+                setProduct(stone);
+            } catch(err) {
+                console.error("Error fetching stones:", err)
+            } finally {
+                setLoading(false);
             }
-            const stone = (data || []) as Product[];
-            console.log(stone);
-            setProduct(stone);
         }
         fetchStone();
-        setLoading(false);
-    },[])
+    },[id])
 
     const formatNumber = (value:number) => new Intl.NumberFormat("no-NO").format(value);
 
