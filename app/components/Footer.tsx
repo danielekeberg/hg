@@ -25,8 +25,8 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-2">
                     <h3 className="text-[#444] text-xl">Åpningstider</h3>
-                    <p className="text-sm">Mandag - Fredag: 10:00 - 15:00</p>
-                    <p className="text-sm">(Eller etter avtale)</p>
+                    <p className="text-sm">Mandag - Fredag: 10:00 - 15:00 (etter avtale)</p>
+                    <p className="text-sm">Ellers etter avtale</p>
                 </div>
                 
             </div>

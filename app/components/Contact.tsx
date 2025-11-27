@@ -37,8 +37,8 @@ export default function Contact() {
                             <img src="/clock.svg" className="h-7 w-7" />
                             <div>
                                 <p className="font-bold">Åpningstider</p>
-                                <p className="text-[#777]">Mandag - Fredag: 10:00 - 15:00</p>
-                                <p className="text-[#777]">(Eller etter avtale)</p>
+                                <p className="text-[#777]">Mandag - Fredag: 10:00 - 15:00 (etter avtale)</p>
+                                <p className="text-[#777]">Ellers etter avtale</p>
                             </div>
                         </div>
                     </div>
