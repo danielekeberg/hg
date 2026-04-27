@@ -89,7 +89,7 @@ export default function Vendors() {
                             <img src="https://eidestein.no/img/Eide-Stein-Logo-meny.jpg" className="h-20" />
                         </Link>
                         <Link target="_blank" href="https://www.nergaard.no" className="flex justify-center border border-neutral-300/50">
-                            <img src="../nergaard-logo.png" className="h-20" />
+                            <img src="../nergaard-logo.jpg" className="h-20" />
                         </Link>
                     </div>
                 </div>
