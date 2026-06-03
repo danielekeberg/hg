@@ -85,10 +85,10 @@ export default function Vendors() {
                 </div>
                 <div className="flex justify-center">
                     <div className="p-2 grid grid-cols-1 gap-5 md:gap-50 md:grid-cols-2">
-                        <Link target="_blank" href="https://eidestein.no/index.shtml" className="flex justify-center border border-neutral-300/50">
+                        <Link target="_blank" href="https://eidestein.no/index.shtml" className="flex justify-center">
                             <img src="https://eidestein.no/img/Eide-Stein-Logo-meny.jpg" className="h-20" />
                         </Link>
-                        <Link target="_blank" href="https://www.nergaard.no" className="flex justify-center border border-neutral-300/50">
+                        <Link target="_blank" href="https://www.nergaard.no" className="flex justify-center">
                             <img src="../nergaard-logo.jpg" className="h-20" />
                         </Link>
                     </div>
